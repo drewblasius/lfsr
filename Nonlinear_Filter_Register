@@ -1,0 +1,17 @@
+def LFSR(n,taps,seed,keylength):
+    keystream = ""
+    registers = []
+    for i in range(len(seed)):#Works
+            registers.append(seed[i])
+    for i in range(keylength):#Works
+        newregisters = []
+        keystream = keystream + str(registers[0])
+        placeholder = 0
+        for k in taps:
+            placeholder = (placeholder + int(registers[(k-1)])) % 2
+        for j in range(n-1):
+            newregisters.append(registers[j+1])
+        newregisters.append(placeholder)
+        registers = newregisters
+    return(registers)
+    return(keystream)

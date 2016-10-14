@@ -1,0 +1,14 @@
+s = input()
+s2 = []
+i = 0
+while i < len(s):
+    lower = i
+    while s[i] == s[i + 1]:
+        i = i + 1
+        if i == len(s) - 2:
+            break
+    i = i + 1
+    upper = i
+    s2.append(s[upper:lower])
+print(s2)
+            

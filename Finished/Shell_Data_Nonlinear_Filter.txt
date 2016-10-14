@@ -1,0 +1,25 @@
+LFSR has 16 Registers
+Length of Keystring:1000
+Input Seed:1011001110110101
+Variable Cycle [Y/N]:Y
+Number of Shift Cycles per Filter Cycle:16
+MONOBIT TEST:
+Chi-Square Value: 1.444
+Degrees of Freedom: 1
+PASS
+TWO-BIT TEST:
+Chi-Square Value: 1.8262702702702427
+Degrees of Freedom: 2
+PASS
+POKER TEST:
+Chi-Square Value: 39.03999999999999
+Degrees of Freedom: 31
+PASS
+RUNS TEST
+Chi-Square Value: 2.974410432572751
+Degrees of Freedom: 8
+PASS
+AUTOCORRELATION TEST:
+Chi-Square Value: 1.8
+Degrees of Freedom: 1
+PASS

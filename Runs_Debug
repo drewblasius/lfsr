@@ -1,0 +1,21 @@
+s = input("Input Binary String: ")
+def e_i(i):
+    return (n - i + 3)/(2**(i+2))
+def runs_test(s):
+    k = 1 #computes k
+    n = len(s)
+    list_s = []
+    t = (n - k + 3)/(2 ** (k + 2)) >= 5
+    while t == True:
+        k = k + 1
+    if t == False:
+        k = k - 1
+    j = 0
+    while j <= n:
+        lower = j
+        while s[j] == s[j+1]:
+            j = j + 1
+        upper = j + 1
+        s_list.appennd(s[lower:upper])
+    return s_list
+print(runs_test(s))
